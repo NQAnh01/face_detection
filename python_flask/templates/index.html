@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Face detection demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(47, 255, 0);
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <div class = "starter-template">
+            <h1>Face detection example</h1>
+        </div>
+
+        <header class="navbar">
+            <form action="/upload" method="post" enctype="multipart/form-data" >
+                <div align="center">
+                    <label class="btn btn-default btn-file">
+                        Browse <input type="file" name="image" style="display: none;">
+                    </label>
+                    <input type="submit" value="Upload" class="btn btn-primary">
+                </div>
+            </form>
+            
+        </header>
+        
+        <div>
+            <img src= "{{ filename }}" alt= "{{ filename }}">
+        </div>
+
+    </body>
+</html>

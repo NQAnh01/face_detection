@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>face detection javascrip</title>
+
+    <style>
+        #container {
+            width: auto;
+            height: 100%;
+            margin: 0 auto;
+            position:-webkit-sticky;
+        }
+
+        #container canvas {
+            width: 50%;
+            height: 50%;
+            position:-webkit-sticky;
+        }
+        #container img {
+            width: 50%;
+            height: 50%;
+            position:inherit;
+        }
+        #file-input {
+            position: initial;
+            
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            color: rgb(85, 255, 7);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nhận diện mặt người javascrip</h1>
+
+    <input type="file" id="file-input">
+
+    <div id="container"></div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.js" integrity="sha256-JOJ7NmVm2chxYZ1KPcAYd2bwVK7NaFj9QKMp7DClews=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="script.js"></script>
+</html>
